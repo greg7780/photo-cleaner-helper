@@ -24,3 +24,4 @@ C:\Users\Gregory Wilson\Desktop\ProjectLatihan\photo-cleaner-helper\photo-cleane
 C:\Users\Gregory Wilson\Desktop\ProjectLatihan\photo-cleaner-helper\photo-cleaner-helper\bin\Debug\net8.0-windows\SharpDX.XInput.dll
 C:\Users\Gregory Wilson\Desktop\ProjectLatihan\photo-cleaner-helper\photo-cleaner-helper\obj\Debug\net8.0-windows\photo-cleaner-helper.csproj.AssemblyReference.cache
 C:\Users\Gregory Wilson\Desktop\ProjectLatihan\photo-cleaner-helper\photo-cleaner-helper\obj\Debug\net8.0-windows\photo-cl.1E323EAE.Up2Date
+C:\Users\Gregory Wilson\Desktop\ProjectLatihan\photo-cleaner-helper\photo-cleaner-helper\obj\Debug\net8.0-windows\photo-cleaner-helper.sourcelink.json

@@ -7,8 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image Source="{Binding CurrentImage}"
-           Stretch="Uniform" />
+        <Image x:Name="ImageViewer"
+           Source="{Binding CurrentImage}"
+           Stretch="Uniform"
+           Visibility="{Binding IsImageVisible}" />
+
+        <MediaElement x:Name="VideoPlayer"
+                  Source="{Binding CurrentVideo}"
+                  LoadedBehavior="Manual"
+                  UnloadedBehavior="Stop"
+                  Stretch="Uniform"
+                  Visibility="{Binding IsVideoVisible}" />
 
         <TextBlock Text="X = Delete | Y = Undo | DPad = Navigate"
                Foreground="White"

@@ -19,6 +19,8 @@ namespace photo_cleaner_helper
 
             DataContext = _vm;
 
+            VideoPlayer.MediaOpened += (s, e) => VideoPlayer.Play();
+
             PickFolder();
 
             _timer.Interval = TimeSpan.FromMilliseconds(100);
@@ -89,6 +91,21 @@ namespace photo_cleaner_helper
             {
                 _vm.UndoDelete();
                 _lastInput = DateTime.Now;
+            }
+
+            if (state.Gamepad.Buttons.HasFlag(GamepadButtonFlags.A))
+            {
+                if (_vm.IsCurrentVideo)
+                {
+                    _vm.IsPlaying = !_vm.IsPlaying;
+
+                    if (_vm.IsPlaying)
+                        VideoPlayer.Play();
+                    else
+                        VideoPlayer.Stop();
+
+                    _lastInput = DateTime.Now;
+                }
             }
         }
     }
